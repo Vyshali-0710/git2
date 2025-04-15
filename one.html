@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor,Image,table,lists</title>
+</head>
+<body>
+    <!--image tag is used to insert images either from our PC or through internet. Image tag is only self closing tag.
+     self closing tag means it will only have close tag and no open tag for it-->
+     <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=" alt="Nature" width="30%"/> 
+     <!--src is the link of the image from internet of image which we want to insert
+     and alt(alternate attribite) ,it displays the text if there is any issue with the url we posted 
+     or while loading the image. We can also adjust the size of  the image using width attribute. 
+     we can mention it either in % or px(pixels)--> 
+     <img src="./DSC09300.JPG" alt="personal" width="30%"/> <!--syntax for importing images from or PC.
+     we need o get the image in the folder that we will push into production or deployement so end users
+    can access it.IF we have it in other folder they will not have access to it and 
+    will not be able to view the image-->
+
+    <!--
+    <audio controls>
+        <source src="" type="audio/format="/>
+        <audio/> (Source will be the link of the audio and we need to mention type whether it is audio and video and 
+        format represents the type f audio like mp3 or mp4 etc..)
+        --> <br/>
+         <!--muted=audio will be muted by default and we need to unmute if we wants to listen.
+         autoplay=music will be autoplaying when we open the page if we use autoplay attribute-->
+        <audio controls muted>
+            <source src="./You-Are-My-Sunshine.mp3" type="audio/mp3"/>        
+        </audio>
+    <a href="./index.html">Index move</a> <!-- we use anchor tag to link one html page to another html page-->
+    <a href="https://instagram.com" target="_blank">instagram</a> <!--usually the linked page will open in the same page but if we wants it to open in new tab, we need to use target.--></usually>
+    <a href="https:youtube.com" target="_blank"> youtube</a>
+
+    <!-- Lists(to number the points(bullets))-->
+     <!--ordered lists(ol)-->
+     <ol> <!--by default the numbering starts from 1-->
+        <li>Apple</li>
+        <li>orange</li>
+        <li>kiwi</li>
+     </ol>
+     <ol type="1" start="41"> <!--the attribute start indicates from where the numbering need to start
+        As we have given 41, the numbering starts from 41-->
+        <li>Apple</li>
+        <li>orange</li>
+        <li>kiwi</li>
+    </ol>
+    <ol type="A" >  <!--Here type defins the format of ordering, type=1, refers to ordering with numbers
+        ,type=A refers to ordering starts with uppercase letters , type=a refers to ordering starts with 
+        lower case letters-->
+        <li>orange</li>
+        <li>kiwi</li>
+        <li>Apple</li>
+    </ol>
+    <ol type="a">
+        <li>Apple</li>
+        <li>orange</li>
+        <li>kiwi</li>
+    </ol>
+    <ol type="i"> <!-- type=i/I refers to roman numbering-->
+        <li>Apple</li>
+        <li>orange</li>
+        <li>kiwi</li>
+    </ol>
+    <ol type="I">
+        <li>Apple</li>
+        <li>orange</li>
+        <li>kiwi</li>
+    </ol>
+     <ul>  <!--ul is unordered list-->
+        <li>Iphone</li>
+        <li>samsung</li>
+        <li>vivo</li>
+     </ul> <!-- in ul the list will  be displayed by default in disc ordering, if we want in any 
+     other style like square or circle, we can use style attribute -->
+     <ul style="list-style-type: square;">  
+        <li>Iphone</li>
+        <li>samsung</li>
+        <li>vivo</li>
+     </ul> 
+     <ul style="list-style-type: circle;">   
+        <li>Iphone</li>
+        <li>samsung</li>
+        <li>vivo</li>
+     </ul> 
+     <dl>  <!-- we use descriptive lists to write some data under a heading-->
+        <dt> <!--dt is descriptive term, where we mention the heading-->
+            Heading
+        </dt>
+        <dd> <!--dd is used to mention the paragraph or write the data-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Adipisci odit commodi doloremque labore quis fugit numquam saepe fugiat autem cumque, 
+            et nisi perspiciatis a sint ut laborum, sed, vel illo.
+        </dd>
+     </dl>
+     <table border="2px" cellspacing="0px"> <!--it is used to create table's-->
+        <!--if we want borders and line for the table we will use border attribute.
+        and by default every row item will have border, if we do nto want it, we can add cellspacing attribute
+        and set to 0-->
+        <tr> <!--tr represents the rows.we need to give heading to the rows first and 
+            we use th(table heading) to give the headings-->
+            <th>Name</th>
+            <th>Team</th>
+        </tr> <!--once the heading is created , we need to enter the data into rows using td(table data)-->
+        <tr>
+            <td>Dhoni</td>
+            <td>CSK</td>
+        </tr>
+        <tr>
+            <td>Sachin</td>
+            <td>MI</td>
+        </tr>   <!--for every row we need to enter with new tags,open and close and 
+        data has to be given respectively based on the headigs-->
+     </table>
+     
+
+</body>
+</html>
